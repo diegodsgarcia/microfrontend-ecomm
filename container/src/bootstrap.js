@@ -1,5 +1,5 @@
-import { mount as productsMount } from 'products/ProductsIndex'
-import { mount as cartMount } from 'cart/CartShow'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
 
-productsMount(document.querySelector('#dash-products'))
-cartMount(document.querySelector('#dash-cart'))
+ReactDOM.render(<App />, document.querySelector('#root'))
